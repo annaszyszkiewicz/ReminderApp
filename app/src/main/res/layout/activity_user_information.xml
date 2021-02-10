@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".UserInformationActivity">
+
+    <Spinner
+        android:id="@+id/selectSex"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/selectSex"
+        app:layout_constraintBottom_toTopOf="@+id/selectAge"
+        app:layout_constraintStart_toEndOf="@+id/txtSex"
+        app:layout_constraintStart_toStartOf="@+id/selectAge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/txtPhysicalActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPhysicalActivity"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPregnant"
+        app:layout_constraintEnd_toEndOf="@+id/txtPregnant"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtAge"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPhysicalActivity"
+        app:layout_constraintEnd_toEndOf="@+id/txtPhysicalActivity"
+        app:layout_constraintTop_toBottomOf="@+id/txtSex" />
+
+    <Spinner
+        android:id="@+id/selectPhysicalActivity"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/selectYesNo"
+        app:layout_constraintBottom_toTopOf="@+id/selectPregnant"
+        app:layout_constraintStart_toStartOf="@+id/selectPregnant"
+        app:layout_constraintTop_toBottomOf="@+id/selectAge" />
+
+    <Spinner
+        android:id="@+id/selectPregnant"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/selectYesNo"
+        app:layout_constraintBottom_toTopOf="@+id/selectBreastfeeding"
+        app:layout_constraintStart_toStartOf="@+id/selectBreastfeeding"
+        app:layout_constraintTop_toBottomOf="@+id/selectPhysicalActivity" />
+
+    <TextView
+        android:id="@+id/txtBreastfeeding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtBreastfeeding"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/selectBreastfeeding"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPregnant" />
+
+    <Spinner
+        android:id="@+id/selectBreastfeeding"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/selectYesNo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtBreastfeeding"
+        app:layout_constraintTop_toBottomOf="@+id/selectPregnant" />
+
+    <TextView
+        android:id="@+id/txtPregnant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPregnant"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBreastfeeding"
+        app:layout_constraintEnd_toEndOf="@+id/txtBreastfeeding"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhysicalActivity" />
+
+    <Spinner
+        android:id="@+id/selectAge"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/selectAge"
+        app:layout_constraintBottom_toTopOf="@+id/selectPhysicalActivity"
+        app:layout_constraintStart_toStartOf="@+id/selectPhysicalActivity"
+        app:layout_constraintTop_toBottomOf="@+id/selectSex" />
+
+    <TextView
+        android:id="@+id/txtSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSex"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAge"
+        app:layout_constraintEnd_toEndOf="@+id/txtAge"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/txtDailyAmountOfWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickCalculate"
+        android:text="@string/btnCalculate"
+        app:layout_constraintBottom_toTopOf="@+id/txtDailyAmountOfWater"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAboutYouInstruction"
+        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/txtAboutYouInstruction"
+        android:layout_width="289dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/txtAboutYouInstruction"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

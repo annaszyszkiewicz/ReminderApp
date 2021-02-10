@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="txtQuotationWater">Water is the driving force of all nature...</string>
+    <string name="btnAboutYou">O Tobie</string>
+    <string name="btnDrinkWaterReminder">Włącz przypomnienia o piciu wody</string>
+    <string name="btnDrinkWaterReminderOFF">Wyłącz przypomnienia o piciu wody</string>
+    <string name="txtAboutYouInstruction">Podaj informacje o sobie i dowiedz się ile wody dziennie należy pić:</string>
+    <string name="txtSex">Płeć: </string>
+    <string name="txtAge">Wiek: </string>
+    <string name="txtPhysicalActivity">Aktywność fizyczna: </string>
+    <string name="txtPregnant">W ciąży: </string>
+    <string name="txtBreastfeeding">Mama karmiąca: </string>
+    <string name="btnCalculate">Oblicz</string>
+    <string name="btnUsefulInfo">Przydatne informacje</string>
+
+    <string name="drink">Pij \</string>
+    <string name="drink2">\ mililitrów wody dziennie.</string>
+
+    <string-array name="selectSex">
+        <item>kobieta</item>
+        <item>mężczyzna</item>
+    </string-array>
+
+    <string-array name="selectAge">
+        <item>więcej niż 16 lat</item>
+        <item>13–15 lat</item>
+        <item>10–12 lat</item>
+        <item>7–9 lat</item>
+        <item>4–6 lat</item>
+        <item>1–3 lat</item>
+        <item>mniej niż rok</item>
+
+    </string-array>
+
+    <string-array name="selectYesNo">
+        <item>nie</item>
+        <item>tak</item>
+    </string-array>
+
+    <string name="txtDietInfo">Organizm zużywa więcej wody niż zwykle do trawienia wysokokalorycznych posiłków, w czasie jedzenia produktów bogatych w błonnik, mocno słonych i pikantnych, a także przy piciu alkoholu, który działa moczopędnie. Więcej wody powinny pić osoby pijące dużo kawy i mocnej czarnej herbaty. Polecane jest więc, by utrzymywać zdrową dietę i powstrzymywać się od nadużywania różnego rodzaju używek. Jeśli jednak ktoś nie chce odmawiać sobie takich przyjemności powinien chociaż zwiększyć ilość dziennej dawki wody.</string>
+    <string name="txtDehydrationInfo">Objawy, takie jak zmęczenie, ból głowy czy wzrost temperatury (przegrzanie), mogą być pierwszą oznaką odwodnienia, czyli utraty 2% wody z organizmu. Dalsze odwodnienie, sięgające 3% masy ciała, obniża naszą wydolność fizyczną. Niedobór wody wynoszący 5–8% z jednej strony pogarsza zdolności wysiłkowe organizmu, a z drugiej powoduje spadek koncentracji i uczucie zmęczenia. Brak 20% wody w naszym ciele może spowodować śmierć</string>
+    <string name="txtTasteInfo">Jeśli nie odpowiada ci smak wody i wolisz sięgać po inne (niekoniecznie zdrowe) napoje, to najpierw spróbuj dodać do wody wyciśnięty sok z cytryny lub limonki lub kilka świeżych liści mięty. Możesz przygotować kostki lodu ze śweżych owoców i również je dorzucić do szklanki z wodą.</string>
+    <string name="txtClimateInfo">Pamiętaj, że zapotrzebowanie na wodę zależy od strefy klimatycznej, czy warunków pogodowych. W upały woda intesywnie paruje przez skórę, więc należy pić jej więcej. Podczas mrozów natomiast organizm wymaga więcej energii by je ogrzać, co powoduje, że również należy dostarczyć mu większą ilość płynów.</string>
+
+</resources>
